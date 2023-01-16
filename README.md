@@ -14,3 +14,20 @@ score = {
     'web': 83
 }
 ```
+=> 정답
+```python
+score = {
+    'python': 80,
+    'django': 89,
+    'web': 83
+}
+score['algorithm'] = 90
+score['python'] = 85
+# 파이썬 딕셔너리 순회
+acc = 0
+for value in score.values(): # .values
+    acc = acc + value
+# print(acc) # 347
+# print(len(score)) #4
+print(acc / len(score))
+```
