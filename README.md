@@ -31,3 +31,12 @@ for value in score.values(): # .values 이용
 # print(len(score)) #4
 print(acc / len(score))
 ```
+
+## 데일리과제 1-4. 자릿수 출력 예제
+
+사용자가 입력한 각 자릿수를 더해 출력하는 코드를 작성하라
+```python
+s = input('숫자를 입력해주세요 : ')
+# print(list(map(int, s))) # [1, 2, 3] #아직 map이 어떤 기능인지 모르겠음
+print(sum(map(int, s)))
+```
