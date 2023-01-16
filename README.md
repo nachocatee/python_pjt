@@ -39,7 +39,8 @@ print(acc / len(score))
 s = input('숫자를 입력해주세요 : ')
 ```
 => 정답
-```
+```python
+s = input('숫자를 입력해주세요 : ')
 # print(list(map(int, s))) # [1, 2, 3] #아직 map이 어떤 기능인지 모르겠음
 print(sum(map(int, s)))
 ```
