@@ -64,3 +64,28 @@ result_list = list(set(orders_list))
 result_list.sort(reverse=True)
 print(result_list)
 ```
+
+## 데일리과제 2-4. 카페 메뉴 주문 받기 예제
+
+1. 아이스 음료 주문이 몇 개 들어왔는지 확인하세요.
+2. 메뉴 별 주문 수를 출력하세요.
+
+orders = '아이스아메리카노,카라멜마키야또,에스프레소,아메리카노,아메리카노,아이스라떼,핫초코,아이스아메리카노,아메리카노,아이스카라멜마키야또,아이스라떼,라떼마키야또,카푸치노,라떼마키야또'
+
+```python
+orders = '아이스아메리카노,카라멜마키야또,에스프레소,아메리카노,아메리카노,아이스라떼,핫초코,아이스아메리카노,아메리카노,아이스카라멜마키야또,아이스라떼,라떼마키야또,카푸치노,라떼마키야또'
+orders_list = orders.split(',')
+# print(orders_list)
+ice = []
+for x in orders_list:
+    if '아이스' in x:
+        ice.append(x)
+print(len(ice))
+
+# print(orders.count('아이스')) -> 또 다른 방법
+
+orders_dict = {}
+for item in orders_list:
+    orders_dict[item] = orders_list.count(item) # item -> key
+print(orders_dict)
+```
